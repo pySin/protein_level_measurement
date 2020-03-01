@@ -13,3 +13,5 @@ Analyse data from protein levels in the nuclear fraction of cerebral cortex in m
 * Python - mysql.connector, re
 
 ## Setup
+
+1. Download the Data_Cortex_Nuclear.csv file from https://www.kaggle.com/ruslankl/mice-protein-expression
