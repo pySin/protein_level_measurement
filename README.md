@@ -5,7 +5,7 @@ Analyse data from protein levels in the nuclear fraction of cerebral cortex in m
 
 ## Tasks
 
-1 Compare the average levels of every protein when the mice are injected with mematine drug or not. / Done
+1. Compare the average levels of every protein when the mice are injected with mematine drug or not. / Done
 
 ## Technologies used:
 
