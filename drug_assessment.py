@@ -18,7 +18,7 @@ def create_table(destination_table):
                ''' % destination_table
 
     conn = mysql.connector.connect(host = 'localhost', user = 'root',
-                                   password = 'dance')
+                                   password = 'your_password')
     cursor = conn.cursor()
     cursor.execute(create_t)
     conn.commit()
@@ -43,7 +43,7 @@ def get_col_names(table_name):
                   ''' % (database, table) # build the SQL query
     
     conn = mysql.connector.connect(host = 'localhost', user = 'root',
-                                   password = 'dance') # MySQL connection
+                                   password = 'your_password') # MySQL connection
     cursor = conn.cursor()
     cursor.execute(get_c_names)
     col_names = cursor.fetchall() # Get result from MySQL
@@ -56,7 +56,6 @@ def get_col_names(table_name):
         # list of strings
 
     conn.commit() # Send the query to MySQL
-    print(p_names) 
     return p_names
 
 
@@ -87,7 +86,7 @@ def populate_table(destination_table, protein_name):
     print(populate)
 
     conn = mysql.connector.connect(host = 'localhost', user = 'root',
-                                   password = 'dance')
+                                   password = 'your_password')
     cursor = conn.cursor()
     cursor.execute(populate)
     conn.commit()
