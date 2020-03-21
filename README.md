@@ -10,6 +10,7 @@ Analyse data from protein levels in the nuclear fraction of cerebral cortex in m
 3. Find which columns are class columns in a table. / Done
 4. Change the empty value cells to NULL / Done
 5. Find minimum and maximum levels of protein in the scope of a class / Done
+6. Assess drug effect by comparing treated and not treated mice protein levels. / Done
 
 ## Technologies used:
 
