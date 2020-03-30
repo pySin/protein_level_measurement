@@ -24,7 +24,7 @@ def p_range_table(table_name, new_table_name):
 
     print(create_table)
     conn = mysql.connector.connect(host = 'localhost', user = 'root',
-                                   password = 'dance') # MySQL connection
+                                   password = 'your_password') # MySQL connection
     cursor = conn.cursor()
     cursor.execute(create_table)
     conn.commit() # Send the query to MySQL
@@ -49,7 +49,7 @@ def get_col_names(table_name):
                   ''' % (database, table) # build the SQL query
     
     conn = mysql.connector.connect(host = 'localhost', user = 'root',
-                                   password = 'dance') # MySQL connection
+                                   password = 'your_password') # MySQL connection
     cursor = conn.cursor()
     cursor.execute(get_c_names)
     col_names = cursor.fetchall() # Get result from MySQL
@@ -75,7 +75,7 @@ def class_codes(table_name, column_name):
                              column_name) # Build the SQL query.
 
     conn = mysql.connector.connect(host = 'localhost', user = 'root',
-                                   password = 'dance') # MySQL connection
+                                   password = 'your_password') # MySQL connection
     cursor = conn.cursor()
     cursor.execute(get_class_names)
     class_fetch = cursor.fetchall()
@@ -115,7 +115,7 @@ def range_protein(table_name, new_table_name, class_column):
                 # called above
 
             conn = mysql.connector.connect(host = 'localhost', user = 'root',
-                                   password = 'dance') # MySQL connection.
+                                   password = 'your_password') # MySQL connection.
             cursor = conn.cursor()
             cursor.execute(min_max)
             print(min_max)
