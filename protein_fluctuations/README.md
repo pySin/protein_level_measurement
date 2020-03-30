@@ -1,1 +1,1 @@
-
+This subproject aims to create protein levels distribution profile for  each mouse for each protein. The fluctuation range of the protein levels for 1 mouse for 1 protein is the range within which there are 15 samples of protein levels. The distributions of these samples within the range is the distribution profile.
