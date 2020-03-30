@@ -1,6 +1,6 @@
 # These are 3 functions that splits single protein results from single mice into 3 value ranges. 
 # This method with the 3 functions works with single mouse and single protein, but when I tried to
-# use it in python with multiple mice it was unable to recognise a protein name.
+# use it in python with multiple mice it was unable to recognize a protein name.
 
 # This is the furst value range
 DELIMITER //
