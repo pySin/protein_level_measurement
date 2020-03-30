@@ -5,7 +5,7 @@ Analyse data from protein levels in the nuclear fraction of cerebral cortex in m
 
 ## Tasks
 
-1. Compare the average levels of every protein when the mice are injected with mematine drug or not. / Done
+1. Compare the average levels of every protein when the mice are injected with mematine drug or not. / Done(avg_protein_levels.py)
 2. Compare the expression variations of single protein in single mouse. / Done
 3. Find which columns are class columns in a table. / Done
 4. Change the empty value cells to NULL. / Done
