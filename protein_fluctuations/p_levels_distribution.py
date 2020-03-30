@@ -2,6 +2,7 @@
 import mysql.connector
 import re
 
+# Insert your password on 'your_password' place. 
 
 ## Make Destination Table
 
@@ -24,7 +25,7 @@ def table_create(destination_table):
                    """ % destination_table # this query is to be sent to MySQL
 
     conn = mysql.connector.connect(host = 'localhost', user = 'root',
-                                   password = 'dance') # Make MySQL connection
+                                   password = 'your_password') # Make MySQL connection
     cursor = conn.cursor()
     cursor.execute(table_create)
     conn.commit() # send the query for execution
@@ -102,7 +103,7 @@ def fluctuations(source_table, destination_table, mouse_id, protein):
                      ) # Fill in the new created table with data
 
     conn = mysql.connector.connect(host = 'localhost', user = 'root',
-                                   password = 'dance')#Create MySQL connection.
+                                   password = 'your_password')#Create MySQL connection.
     cursor = conn.cursor()
     cursor.execute(populate)
     conn.commit() # Send the query for execution.
@@ -128,7 +129,7 @@ def get_col_names(table_name):
                   ''' % (database, table) # build the SQL query
     
     conn = mysql.connector.connect(host = 'localhost', user = 'root',
-                                   password = 'dance') # MySQL connection
+                                   password = 'your_password') # MySQL connection
     cursor = conn.cursor()
     cursor.execute(get_c_names)
     col_names = cursor.fetchall() # Get result from MySQL
@@ -156,7 +157,7 @@ def mouse_codes(source_table):
                  ''' % source_table
 
     conn = mysql.connector.connect(host = 'localhost', user = 'root',
-                                   password = 'dance') # MySQL connection
+                                   password = 'your_password') # MySQL connection
 
     cursor = conn.cursor()
     cursor.execute(send_query)
