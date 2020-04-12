@@ -14,3 +14,4 @@ learn mice and for individual normal mouse. The lower the difference between the
 stimulated mouse profile.
 * This (natural_learner_results.csv) CSV file show the overall difference between the average protein levels for stimulated mouse and individual normal mice.
 * The file 'natural_learner_winner.csv' shows the winner mouse closest to the average stimulated mouse protein levels profile.
+* The file 'mouse_natural_learner.sql' Upload the main SQL file doing almost all the calculations. The file starts working with the (protein_data.find_natural_learner) table created by the 'normal_genetic_learner.py' file. The final result is the normal mouse ID  showng protein level profile closest to the protein level profile from a stimulated to learn mouse. 
