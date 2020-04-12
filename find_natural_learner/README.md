@@ -12,3 +12,4 @@ levels is our natural learner.
 * The file 'stimulated_protein_difference.csv'. This CSV file contains data about the average protein levels for stimulated to
 learn mice and for individual normal mouse. The lower the difference between the two the closer that individual mouse is to the
 stimulated mouse profile.
+* This (natural_learner_results.csv) CSV file show the overall difference between the average protein levels for stimulated mouse and individual normal mice.
