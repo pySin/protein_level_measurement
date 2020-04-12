@@ -12,6 +12,7 @@ Analyse data from protein levels in the nuclear fraction of cerebral cortex in m
 5. Find minimum and maximum levels of protein in the scope of a class. / Done ('normal_protein_range.py')
 6. Assess drug effect by comparing treated and not treated mice protein levels. / Done ('drug_assessment.py')
 7. Create protein fluctuations profile for each mouse for each protein. /Done ('protein_fluctuations/p_levels_distribution.py')
+8. Find the best natural learner mouse. Done (find_natural_learner/)
 
 ## Technologies used:
 
