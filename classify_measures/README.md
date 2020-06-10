@@ -1,1 +1,1 @@
-
+The task is to substitute the protein values with the range quarter they fall under. The range between the minimum and the maximum level for each protein is divided in 4 quarters. Each protein can fall under the 1st, 2nd, 3rd or the 4th quarter. In this way the numeric values are transformed into classes.
