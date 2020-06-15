@@ -61,7 +61,7 @@ def get_col_names(table_name):
 
 def populate_table(destination_table, protein_name):
     # Find the average protein levels by class(treated with memantine and
-    # not treated). Find the percent difference between treated and not treated.
+    # not treated). Find the percent difference between normal treated and normal not treated mice.
     
     populate = '''
                 INSERT INTO %s(protein,
