@@ -16,16 +16,19 @@ SELECT * FROM protein_info.protein_levels;
 
 UPDATE protein_info.protein_levels_b 
 SET DYRK1A_N = (CASE
-					WHEN DYRK1A_N BETWEEN (SELECT MIN(DYRK1A_N) FROM protein_info.protein_levels_c) 
+		    WHEN DYRK1A_N BETWEEN (SELECT MIN(DYRK1A_N) FROM protein_info.protein_levels_c) 
                     AND (SELECT MIN(DYRK1A_N) + ((MAX(DYRK1A_N) - MIN(DYRK1A_N))/4) FROM protein_info.protein_levels_c)
                     THEN 1
+		    
                     WHEN DYRK1A_N BETWEEN (SELECT MIN(DYRK1A_N) + ((MAX(DYRK1A_N) - MIN(DYRK1A_N))/4) FROM protein_info.protein_levels_c)
                     AND (SELECT MIN(DYRK1A_N) + (((MAX(DYRK1A_N) - MIN(DYRK1A_N))/4)*2) FROM protein_info.protein_levels_c)
                     THEN 2
-					WHEN DYRK1A_N BETWEEN (SELECT MIN(DYRK1A_N) + (((MAX(DYRK1A_N) - MIN(DYRK1A_N))/4)*2) FROM protein_info.protein_levels_c)
+		    
+		    WHEN DYRK1A_N BETWEEN (SELECT MIN(DYRK1A_N) + (((MAX(DYRK1A_N) - MIN(DYRK1A_N))/4)*2) FROM protein_info.protein_levels_c)
                     AND (SELECT MIN(DYRK1A_N) + (((MAX(DYRK1A_N) - MIN(DYRK1A_N))/4)*3) FROM protein_info.protein_levels_c)
                     THEN 3
-					WHEN DYRK1A_N BETWEEN (SELECT MIN(DYRK1A_N) + (((MAX(DYRK1A_N) - MIN(DYRK1A_N))/4)*3) FROM protein_info.protein_levels_c)
+		    
+		    WHEN DYRK1A_N BETWEEN (SELECT MIN(DYRK1A_N) + (((MAX(DYRK1A_N) - MIN(DYRK1A_N))/4)*3) FROM protein_info.protein_levels_c)
                     AND(SELECT MIN(DYRK1A_N) + (((MAX(DYRK1A_N) - MIN(DYRK1A_N))/4)*4) FROM protein_info.protein_levels_c)
                     THEN 4
 					END);
